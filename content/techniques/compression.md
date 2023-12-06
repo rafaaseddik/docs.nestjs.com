@@ -8,16 +8,17 @@ For **high-traffic** websites in production, it is strongly recommended to offlo
 
 Use the [compression](https://github.com/expressjs/compression) middleware package to enable gzip compression.
 
-First install the required package:
+First install the required package and its types:
 
 ```bash
 $ npm i --save compression
+$ npm i --save-dev @types/compression
 ```
 
 Once the installation is complete, apply the compression middleware as global middleware.
 
 ```typescript
-import * as compression from 'compression';
+import * compression from 'compression';
 // somewhere in your initialization file
 app.use(compression());
 ```
